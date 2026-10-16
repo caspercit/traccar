@@ -1,0 +1,11 @@
+services:
+  traccar:
+    image: traccar/traccar:latest
+    container_name: traccar
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8082:8082"
+      - "5055:5055"
+    volumes:
+      - ./data:/opt/traccar/data
+      - ./conf/traccar.xml:/opt/traccar/conf/traccar.xml:ro
