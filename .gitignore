@@ -1,0 +1,25 @@
+# Credenciales y entorno
+.env
+.env.*
+!.env.example
+**/application-local.properties
+**/secrets/
+**/*credentials*
+# Builds y cachés
+target/
+node_modules/
+dist/
+build/
+*.class
+# Datos locales Traccar
+**/data/
+**/logs/
+**/backup/
+**/*.mv.db
+**/*.trace.db
+**/urls-cloudflare.txt
+# IDE / sistema
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
